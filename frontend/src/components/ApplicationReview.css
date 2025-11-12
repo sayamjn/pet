@@ -1,0 +1,125 @@
+.application-review-card {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 2px solid #ecf0f1;
+}
+
+.review-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 200px;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.applicant-info h4,
+.pet-info h4,
+.status-info h4 {
+  margin: 0 0 1rem 0;
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+.applicant-info p,
+.pet-info p {
+  margin: 0.5rem 0;
+  color: #7f8c8d;
+}
+
+.applicant-info strong,
+.pet-info strong {
+  color: #2c3e50;
+}
+
+.review-pet-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.status-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review-status {
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+.review-status.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.review-status.approved {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.review-status.rejected {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.review-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.approve-btn,
+.reject-btn {
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.approve-btn {
+  background-color: #27ae60;
+  color: white;
+}
+
+.approve-btn:hover:not(:disabled) {
+  background-color: #229954;
+}
+
+.reject-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.reject-btn:hover:not(:disabled) {
+  background-color: #c0392b;
+}
+
+.approve-btn:disabled,
+.reject-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .review-content {
+    grid-template-columns: 1fr;
+  }
+
+  .review-actions {
+    flex-direction: column;
+  }
+
+  .approve-btn,
+  .reject-btn {
+    width: 100%;
+  }
+}

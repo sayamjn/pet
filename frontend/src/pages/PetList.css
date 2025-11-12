@@ -1,0 +1,51 @@
+.pet-list-page {
+  padding: 2rem;
+  min-height: calc(100vh - 80px);
+}
+
+.pet-list-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pet-list-container h1 {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.pet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.no-pets {
+  text-align: center;
+  padding: 3rem;
+  color: #7f8c8d;
+  font-size: 1.2rem;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+}
+
+.error {
+  color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+  .pet-list-page {
+    padding: 1rem;
+  }
+
+  .pet-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
