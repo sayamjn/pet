@@ -49,8 +49,8 @@ A full-stack MERN application that enables users to browse pets available for ad
 ### 1. Clone the repository
 
 ```bash
-git clone <repository-url>
-cd pet-adoption-system
+git clone https://github.com/sayamjn/pet
+cd pet
 ```
 
 ### 2. Backend Setup
